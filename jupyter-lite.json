@@ -7,8 +7,12 @@
         "jupyterlab-tour"
       ]
     },
-    "settingsOverrides": {"renderingLayout": "side-by-side"}
-  }
+    "settingsOverrides": {
+        "@jupyterlab/notebook-extension:tracker": {
+            "renderingLayout": "side-by-side"
+        }
+    }
+}
 
 
 

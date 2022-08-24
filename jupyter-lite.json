@@ -5,12 +5,12 @@
         "@jupyterlab/drawio-extension",
         "jupyterlab-kernel-spy",
         "jupyterlab-tour"
-      ]
-    },
-    "settingsOverrides": {
-        "@jupyterlab/notebook-extension:tracker": {
+      ],
+      "settingsOverrides": {
+         "@jupyterlab/notebook-extension:tracker": {
             "renderingLayout": "side-by-side"
-        }
+         }
+      }
     }
 }
 

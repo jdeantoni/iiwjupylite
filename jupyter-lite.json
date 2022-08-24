@@ -8,7 +8,7 @@
       ],
       "settingsOverrides": {
          "@jupyterlab/notebook-extension:tracker": {
-            "renderingLayout": "side-by-side"
+            "renderingLayout": 1
          }
       }
     }

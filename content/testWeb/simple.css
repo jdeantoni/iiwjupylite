@@ -1,0 +1,7 @@
+h1{
+    text-align: center;
+    color: #FF0000;
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: #FFCC33;
+    background-clip: padding-box;
+}

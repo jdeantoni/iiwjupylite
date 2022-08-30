@@ -12,7 +12,7 @@ class Pixel:
         return f'Pixel({self.r},{self.g},{self.b})'
 
 
-class Image:
+class PPMImage:
     def __init__(self, l, w, ps):
         self.length=l
         self.width=w
@@ -51,11 +51,11 @@ def loadImage(path):
             dimensionsAndPixels.append(w)
 
 
-    length=dimensionsAndPixels[0]
-    width=dimensionsAndPixels[1]
+    length=int(dimensionsAndPixels[0])
+    width=int(dimensionsAndPixels[1])
     for i in range(3,len(dimensionsAndPixels)-1,3):
-        allPixels.append(Pixel(dimensionsAndPixels[i],dimensionsAndPixels[i+1],dimensionsAndPixels[i+2]))
-    return Image(length,width,allPixels)
+        allPixels.append(Pixel(int(dimensionsAndPixels[i]),int(dimensionsAndPixels[i+1]),int(dimensionsAndPixels[i+2])))
+    return PPMImage(length,width,allPixels)
 
 
 
@@ -64,8 +64,10 @@ def saveImage(img,path):
     f.write("P3\n")
     f.write("#created by my wonderfull app !\n")
     f.write(f'{img.length} {img.width} 255\n')
-    for i in range(3,len(img.pixels)-1,3):
-        f.write(img.pixels[i],img.pixels[i+1],img.pixels[i+2],"\n")
+    print(len(img.pixels)-1)
+    for i in range(0,len(img.pixels)-1):
+        f.write(f'{img.pixels[i].r} {img.pixels[i].g} {img.pixels[i].b}\n')
+    f.close()
 
 
 

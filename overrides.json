@@ -1,3 +1,5 @@
-"@jupyterlab/notebook-extension:tracker": {
-  "renderingLayout": "side-by-side"
+{
+  "@jupyterlab/notebook-extension:tracker": {
+    "renderingLayout": "side-by-side"
+  }
 }

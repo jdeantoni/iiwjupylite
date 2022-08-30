@@ -4,15 +4,10 @@
       "disabledExtensions": [
         "@jupyterlab/drawio-extension",
         "jupyterlab-kernel-spy",
-        "jupyterlab-tour"
+        "jupyterlab-tour",
+        "@jupyterlab/launcher-extension"
       ]
-    },
-    "settingsOverrides": {
-         "@jupyterlab/notebook-extension:tracker": {
-            "renderingLayout": "side-by-side"
-         },
-        "@jupyterlab/apputils-extension:palette": {"modal": false}
-     }
+    }
 }
 
 

@@ -1,5 +1,4 @@
-{
-  "@jupyterlab/console-extension:tracker": {
-    "interactionMode": "terminal"
-  }
-}
+"@jupyterlab/notebook-extension:tracker": {
+  "renderingLayout": "side-by-side"
+},
+"@jupyterlab/apputils-extension:palette": {"modal": false}

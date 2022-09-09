@@ -26,7 +26,7 @@ jobs:
           cp README.md content
           mkdir dist
           mkdir dist/lab1
-          jupyter lite build --contents content --output-dir dist/lab1
+          jupyter lite build --contents contentLab1 --output-dir dist/lab1
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

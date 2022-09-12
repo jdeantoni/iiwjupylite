@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plotLib
 
 
-
-def display(lstPoint: list):
+#This function takes a list of Point2D as parameter and plot them by using the matplotlib module
+def display2DPoints(lstPoint: list):
     xSet: list =[]
     ySet: list = []
     for p in lstPoint:

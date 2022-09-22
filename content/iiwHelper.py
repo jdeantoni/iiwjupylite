@@ -1,8 +1,8 @@
-import matplotlib.pyplot as plotLib
+import matplotlib.pyplot as plt
 
 
 def display2DPoints(*lstPoints: list):
-    '''This function takes a list of Point2D as parameter and plot them by using the matplotlib module'''
+    '''This function takes one or several list(s) of Point2D as parameter and plot them by using the matplotlib module'''
     for lstPoint in lstPoints:
         xSet: list =[]
         ySet: list = []
